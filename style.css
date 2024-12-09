@@ -1,0 +1,991 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+
+    background-color: #f0f0f0;
+}
+
+/* Navbar Styles */
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo img {
+    width: 150px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #D9870A;
+}
+
+.content-slide {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(./img/nuts-arrangement-with-copy-space.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 5s;
+    background-repeat: no-repeat;
+    animation-name: animate;
+    animation-duration: 60s;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+/* Main Section */
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.centered-content {
+    position: relative;
+    z-index: 2;
+
+}
+
+h1 {
+    font-size: 3.2rem;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    margin-top: 100px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+p {
+    color: #f8f6f7;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 20px;
+    animation: slideUp 3s ease-in-out;
+
+}
+
+/* Button Styling */
+.explore-btn {
+    background-color: #D9870A;
+    color: white;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 1.5rem;
+    margin-top: 70px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.explore-btn:hover {
+    background-color: #F69C42;
+    transform: scale(1.1);
+}
+
+
+
+
+/* Sliding Text Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slider Styles */
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* Slider Container */
+.slides {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    /* Full width of the viewport */
+    height: 100vh;
+    /* Full height of the viewport */
+    position: relative;
+    /* To position controls if needed */
+}
+
+/* Individual Slide */
+.slide {
+    min-width: 100%;
+    /* Each slide takes up 100% of the viewport width */
+    height: 100vh;
+    /* Full height of the viewport */
+    flex-shrink: 0;
+    /* Prevent shrinking of slides */
+}
+
+/* Images inside Slides */
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image covers the entire slide */
+}
+
+
+
+
+
+/* Keyframe animation to slide through images one by one every 5 seconds */
+@keyframes animate {
+    0% {
+        background-image: url(./img/agricultural-barley-wheat-background-cereal-farm-generate-ai_98402-136291.jpg);
+    }
+
+    ;
+
+    20% {
+        background-image: url(./img/install\ 3.jpg)
+    }
+
+    ;
+
+    40% {
+        background-image: url(./img/nuts-arrangement-with-copy-space.jpg)
+    }
+
+    ;
+
+    60% {
+        background-image: url(./img/install\ 3.jpg)
+    }
+
+    ;
+
+    80% {
+        background-image: url(./img/pin6.jpg)
+    }
+
+    ;
+
+    100% {
+        background-image: url(./img/nuts-arrangement-with-copy-space.jpg)
+    }
+
+    ;
+
+    /* 120% {
+        background-image: url(./img/agric3.jpg)
+    } */
+
+    ;
+
+
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.6rem;
+
+    }
+
+    p {
+        font-size: 0.9rem;
+
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+
+    .explore-btn {
+        background-color: #D9870A;
+        color: white;
+        font-weight: bold;
+        padding: 12px 24px;
+        border-radius: 1.5rem;
+        margin-top: 30px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        font-size: 1.1rem;
+    }
+}
+
+
+
+
+
+* Section Styles */ section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#products {
+    background-color: #fff;
+}
+
+#services {
+    background-color: #4c4e52;
+}
+
+#about {
+    background-color: #eee;
+}
+
+#contact {
+    background-color: #e9e9e9;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    justify-content: center;
+    display: flex;
+}
+
+section p {
+    font-size: 1rem;
+    color: #030202;
+    margin: 10px 0;
+}
+
+/* Specific Styles for Products */
+
+.products-intro {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+
+.product-detail {
+    grid-column: span 2;
+    font-size: 1rem;
+    color: #ffffff;
+    text-align: left;
+    margin: 20px auto;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Two equal columns */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: start;
+    /* Align content at the start */
+}
+
+
+.product-card,
+.product-detail {
+    text-align: left;
+    margin: 0;
+}
+
+/* Adjust Layout for Laptops and Larger Devices */
+@media (min-width: 1024px) {
+    .product-grid {
+        grid-template-columns: 1fr 1fr;
+        /* Two columns for larger screens */
+        align-items: start;
+        /* Align items at the top */
+    }
+
+    /* Domestic Dryer: Align to the Left */
+    .product-grid> :nth-child(1),
+    /* Domestic Dryer Card */
+    .product-grid> :nth-child(2) {
+        /* Domestic Dryer Text */
+        grid-column: 1;
+        /* Place in the first column */
+        text-align: left;
+        /* Align text to the left */
+    }
+
+    /* Industrial Dryer: Align to the Right */
+    .product-grid> :nth-child(3),
+    /* Industrial Dryer Card */
+    .product-grid> :nth-child(4) {
+        /* Industrial Dryer Text */
+        grid-column: 2;
+        /* Place in the second column */
+        text-align: left;
+        /* Align text to the right */
+    }
+}
+
+.product-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+
+}
+
+.product-card h3 {
+    margin-top: 10px;
+    color: #222;
+}
+
+/* Card Styling */
+.product-card,
+.service-card {
+    position: relative;
+    text-align: center;
+    background-color: #ec9c24;
+    border: 1px solid #dae90a;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px;
+    overflow: hidden;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.product-card:hover,
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Styling */
+.product-card img,
+.service-card img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+/* Card Title */
+.product-card h3,
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #f7f5f5;
+}
+
+/* Description */
+.toggle-description {
+    display: none;
+    /* Hidden by default */
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* Button for Toggling */
+.toggle-btn {
+    display: inline-block;
+    background-color: #D9870A;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #F69C42;
+}
+
+
+/* Products Section */
+#products {
+    background-image: url('/img/glass\ red\ bg6.jpg');
+    /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* Fix the background image */
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#products h2 {
+    font-size: 2.5rem;
+    color: white;
+    /* Adjust text color for better contrast */
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Slight transparency to stand out against the background */
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #products h2 {
+        font-size: 2rem;
+    }
+
+    .product-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .product-card p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Specific Styles for Services */
+
+#services {
+    background-image: url('/img/glass\ red\ bg1.jpg');
+    /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* Fix the background image */
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    color: white;
+    /* Text color */
+    text-align: center;
+    /* Center align text */
+    padding-top: 2rem;
+}
+
+.services-intro {
+    font-size: 1.2rem;
+    /* Adjust font size if needed */
+    color: white;
+    /* Text color */
+    text-align: center;
+    /* Center align text */
+    margin: 0 auto;
+    /* Center align the paragraph block */
+    max-width: 800px;
+    /* Optional: Restrict width for better readability */
+    line-height: 1.5;
+    /* Better line spacing for readability */
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+.services-section .services-grid {
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Default Grid Layout for Smaller Devices */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    /* Center alignment for smaller devices */
+}
+
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    /* Fixed height for all images */
+    object-fit: cover;
+    /* Crop images to fit perfectly */
+    border-radius: 4px;
+}
+
+.service-card,
+.service-detail {
+    margin: 0 auto;
+    /* Center content on smaller devices */
+    text-decoration: none;
+}
+
+.service-detail {
+    margin-top: 95px;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.5;
+    /* Adjust line spacing */
+    text-align: center;
+    /* Center the text */
+    max-width: 350px;
+    /* Match the width of the card */
+    margin-left: auto;
+    /* margin-right: auto;*/
+}
+
+.service-detail p {
+    text-align: justify;
+    word-spacing: 0.5px;
+    margin-left: 60px;
+    font-size: 20px;
+    padding-top: 4rem;
+color: white;
+}
+
+.service-card {
+    height: 100%;
+    /* Ensure equal height for all cards */
+}
+
+
+
+/* Adjust Layout for Laptops and Larger Devices */
+@media (min-width: 1024px) {
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+        /* Two-column layout */
+        gap: 40px 20px;
+        /* Adjust spacing for larger screens */
+    }
+
+    /* Align services and their descriptions */
+    .service-card {
+        margin-bottom: 0;
+        /* Remove bottom margin for alignment with description */
+    }
+
+    .service-detail {
+        margin-top: -20px;
+        /* Adjust spacing to pair description with card */
+    }
+}
+
+
+/* Specific Styles for About Section */
+.about-section .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#about {
+
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Ensure full viewport height */
+    background-color: #202020;
+    /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    /* Text color for contrast */
+    text-align: center;
+    /* Center the text */
+}
+
+.about-section h2 {
+    color: white;
+    padding-top: 2rem;
+}
+
+.about-text p {
+    font-size: 1.2rem !important;
+    line-height: 1.8 !important;
+    margin-bottom: 20px !important;
+    padding: 0 10px !important;
+    color: rgb(247, 245, 245) !important;
+    /* Use a bold color to confirm CSS is applied */
+    text-align: center;
+    margin-top: 70px;
+}
+
+.about-section .about-image img {
+    max-width: 300px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-radius: 10rem;
+}
+
+/* Specific Styles for Contact Section */
+.contact-section .contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-section .contact-form input,
+.contact-section .contact-form textarea,
+.contact-section .contact-form button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contact-section .contact-form button {
+    background-color: #D9870A;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section .contact-form button:hover {
+    background-color: #F69C42;
+}
+
+
+.contact-section {
+    position: relative;
+    /* Enables positioning of child elements */
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contact-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Social Media Styles */
+
+.social-media a {
+    font-size: 24px;
+    color: inherit;
+    /* Keeps the color as specified */
+    text-decoration: none;
+    /* Removes underline */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-media a:hover {
+    transform: scale(1.2);
+    /* Slight zoom effect on hover */
+}
+
+
+
+
+.social-media {
+    position: absolute;
+    /* Positioned relative to the contact section */
+    bottom: 20px;
+    /* 20px from the bottom */
+    right: 20px;
+    /* 20px from the right */
+    display: flex;
+    flex-direction: column;
+    /* Align icons vertically */
+    gap: 15px;
+}
+
+.social-media a {
+    color: #555;
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #007bff;
+    transform: scale(1.2);
+}
+
+
+
+.social-media a {
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.instagram-btn {
+    color: #E1306C;
+}
+
+.twitter-btn {
+    color: #1DA1F2;
+}
+
+.whatsapp-btn {
+    color: #25D366;
+}
+
+.facebook-btn {
+    color: #1877F2;
+}
+
+.social-media a:hover {
+    transform: scale(1.2);
+    /* Slight zoom effect on hover */
+}
+
+
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    /* Default layout for vertical alignment */
+    position: absolute;
+    /* For desktop bottom-right positioning */
+    bottom: 20px;
+    right: 20px;
+    gap: 15px;
+    /* Space between icons */
+}
+
+/* General styles for icons */
+.social-media a {
+    font-size: 24px;
+    color: inherit;
+    /* Keeps icon color */
+    text-decoration: none;
+    /* Removes underline */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-media a:hover {
+    transform: scale(1.2);
+    /* Slight zoom effect */
+}
+
+/* Center icons for tablets and mobile devices */
+@media (max-width: 768px) {
+
+    /* Tablet screens */
+    .social-media {
+        position: static;
+        /* Removes absolute positioning */
+        flex-direction: row;
+        /* Horizontal alignment */
+        justify-content: center;
+        /* Center icons horizontally */
+        gap: 20px;
+        /* Larger space between icons */
+        margin-top: 20px;
+        /* Add spacing from the contact form */
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Mobile screens */
+    .social-media {
+        flex-direction: row;
+        /* Horizontal alignment */
+        justify-content: center;
+        /* Center icons horizontally */
+        gap: 25px;
+        /* Increase spacing for smaller screens */
+        margin-top: 35px;
+        /* Adjust spacing as needed */
+    }
+
+    .social-media a {
+        font-size: 20px;
+        /* Slightly smaller icons for mobile */
+    }
+}
+
+
+
+
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+
+    /* Tablets */
+    .social-media {
+        bottom: 10px;
+        /* Adjust spacing for smaller screens */
+        right: 10px;
+    }
+
+    .social-media a {
+        font-size: 20px;
+        /* Smaller icons */
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Mobile Phones */
+    .social-media a {
+        font-size: 18px;
+        /* Even smaller icons for small screens */
+    }
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 0.9rem;
+}
