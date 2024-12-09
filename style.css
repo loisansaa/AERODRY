@@ -556,7 +556,7 @@ section p {
 /* Specific Styles for Services */
 
 #services {
-    background-image: url('/img/glass\ red\ bg1.jpg');
+    background-image: url('/img/pin10.jpg');
     /* Replace with your image path */
     background-size: cover;
     background-position: center;
@@ -569,17 +569,18 @@ section p {
 
 #services h2 {
     font-size: 2.5rem;
-    color: white;
+    color: rgb(253, 253, 253);
     /* Text color */
     text-align: center;
     /* Center align text */
     padding-top: 2rem;
+    font-weight: 1000;
 }
 
 .services-intro {
     font-size: 1.2rem;
     /* Adjust font size if needed */
-    color: white;
+    color: rgb(255, 255, 255);
     /* Text color */
     text-align: center;
     /* Center align text */
@@ -589,7 +590,7 @@ section p {
     /* Optional: Restrict width for better readability */
     line-height: 1.5;
     /* Better line spacing for readability */
-
+    font-weight: 1000;
     margin-top: 40px;
     margin-bottom: 40px;
 }
@@ -657,7 +658,7 @@ section p {
     margin-left: 60px;
     font-size: 20px;
     padding-top: 4rem;
-color: white;
+color: rgb(3, 3, 3);
 }
 
 .service-card {
