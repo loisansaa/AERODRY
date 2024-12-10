@@ -817,12 +817,12 @@ color: rgb(255, 255, 255);
 @media screen and (max-width: 768px) {
     .about-text p {
         font-size: 1rem; /* Reduce font size for smaller screens */
-        padding: 0 15px; /* Adjust padding for smaller screens */
+        padding: 0 4px; /* Adjust padding for smaller screens */
         text-align: justify; /* Maintain text justification */
     }
 
     .about-container {
-        margin: 10px auto; /* Reduce margins for smaller screens */
+        margin: 10px 10px; /* Reduce margins for smaller screens */
     }
 }
 
@@ -836,7 +836,7 @@ color: rgb(255, 255, 255);
     }
 
     .about-container {
-        margin: 5px auto; /* Minimized margins for very small screens */
+        margin: 5px 5px; /* Minimized margins for very small screens */
     }
 }
 
