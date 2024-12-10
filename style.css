@@ -810,11 +810,33 @@ color: rgb(255, 255, 255);
     text-align: justify;
 }
 
-/* Responsive Design for Mobile Devices */
-@media (max-width: 768px) {
+
+
+
+/* Responsive styles for mobile */
+@media screen and (max-width: 768px) {
     .about-text p {
-        padding: 0 15px; /* Optional: Adds some spacing on the sides */
-        text-align: justify;
+        font-size: 1rem; /* Reduce font size for smaller screens */
+        padding: 0 15px; /* Adjust padding for smaller screens */
+        text-align: justify; /* Maintain text justification */
+    }
+
+    .about-container {
+        margin: 10px auto; /* Reduce margins for smaller screens */
+    }
+}
+
+/* Extra small screens (phones) */
+@media screen and (max-width: 480px) {
+    .about-text p {
+        font-size: 0.9rem; /* Further reduce font size */
+        line-height: 1.6; /* Adjust line height */
+        padding: 0 10px; /* Narrower padding for very small screens */
+        text-align: justify; /* Ensure justification on very small screens */
+    }
+
+    .about-container {
+        margin: 5px auto; /* Minimized margins for very small screens */
     }
 }
 
@@ -846,25 +868,51 @@ color: rgb(255, 255, 255);
 .about-section h2 {
     color: white;
     padding-top: 4.5rem;
+    
 }
 
 .about-text p {
     font-size: 1.2rem !important;
     line-height: 1.8 !important;
     margin-bottom: 20px !important;
-    padding: 0 10px !important;
+    padding: 0 290px !important;
     color: rgb(247, 245, 245) !important;
-    /* Use a bold color to confirm CSS is applied */
-    text-align: center;
+    text-align: justify;
+    /* text-align: center; */
     margin-top: 30px;
+    
 }
 
-.about-section .about-image img {
-    max-width: 300px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    border-radius: 10rem;
+
+
+.about-container {
+    text-align: center; /* Center the content horizontally */
+    margin: 20px auto; /* Center the container and add spacing */
+    max-width: 800px; /* Restrict the maximum width for better layout */
 }
+
+.about-text {
+    color: white; /* Make the text color white */
+    margin: 0 20px 20px; /* Add margins on the sides and bottom */
+    line-height: 1.8; /* Increase line height for better readability */
+    text-align: justify; /* Justify the text for a clean look */
+    word-spacing: -1.3px;
+}
+
+.about-image img {
+    width: 250px; /* Set the width of the image */
+    height: 250px; /* Set the height of the image */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image fills the circular shape without distortion */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
+    margin: 0 auto; /* Center the image */
+    margin-bottom: 50px;
+}
+
+
+
+
+
 
 /* Specific Styles for Contact Section */
 .contact-section .contact-form {
