@@ -305,11 +305,11 @@ p {
 /* Hide the menu toggle button by default */
 .menu-toggle {
     display: none;
-    flex-direction: column;
-    gap: 4px;
     background: none;
     border: none;
     cursor: pointer;
+    font-size: 1.5rem; /* Adjust size as needed */
+    color: white; /* Match your design */
 }
 
 .menu-toggle .bar {
@@ -338,7 +338,10 @@ p {
     }
 
     .menu-toggle {
-        display: flex;
+        .menu-toggle {
+            display: flex; /* Show the toggle on small screens */
+            align-items: center;
+        }
     }
 
     .nav-links.show {
