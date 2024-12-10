@@ -1,21 +1,32 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
 
-    menuToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        
-        // Toggle menu icon (assuming you're using boxicons)
-        const currentIcon = menuToggle.querySelector('box-icon');
-        const iconName = currentIcon.getAttribute('name') === 'menu' ? 'x' : 'menu';
-        currentIcon.setAttribute('name', iconName);
-    });
-
-    // Close menu when a link is clicked
-    navLinks.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.classList.remove('active');
-            menuToggle.querySelector('box-icon').setAttribute('name', 'menu');
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+            
+            // Toggle menu icon
+            const icon = menuToggle.querySelector('i');
+            if (icon.classList.contains('bx-menu')) {
+                icon.classList.remove('bx-menu');
+                icon.classList.add('bx-x');
+            } else {
+                icon.classList.remove('bx-x');
+                icon.classList.add('bx-menu');
+            }
         });
-    });
+
+        // Close menu when a link is clicked
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.classList.remove('active');
+                const icon = menuToggle.querySelector('i');
+                icon.classList.remove('bx-x');
+                icon.classList.add('bx-menu');
+            });
+        });
+    }
 });
+
+
