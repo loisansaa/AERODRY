@@ -269,6 +269,10 @@ p {
         transition: background-color 0.3s ease, transform 0.3s ease;
         font-size: 1.1rem;
     }
+
+    .service-detail{
+        text-align: center;
+    }
 }
 
 
@@ -556,7 +560,7 @@ section p {
 /* Specific Styles for Services */
 
 #services {
-    background-image: url('/img/pin10.jpg');
+    background-image: url('/img/dark-grunge-texture.jpg');
     /* Replace with your image path */
     background-size: cover;
     background-position: center;
@@ -658,7 +662,7 @@ section p {
     margin-left: 60px;
     font-size: 20px;
     padding-top: 4rem;
-color: rgb(3, 3, 3);
+color: rgb(255, 255, 255);
 }
 
 .service-card {
@@ -690,7 +694,60 @@ color: rgb(3, 3, 3);
 }
 
 
+/* Service Section Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+    .service-detail p {
+        text-align: justify; /* Justifies the text */
+        margin: 0 auto; /* Centers the text block horizontally */
+        padding: 10px; /* Adds spacing around the text */
+    }
+
+    .service-detail {
+        display: flex;
+        justify-content: center; /* Centers the content within the parent container */
+        text-align: center; /* Ensures text aligns properly in smaller views */
+    }
+
+    /* Adjust spacing for cards and text */
+    .service-card {
+        margin-bottom: 30px;
+    }
+}
+
+/* Tablet-Specific Styling */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .service-detail p {
+        text-align: justify; /* Justifies the text */
+        margin: 0 auto; /* Centers the text block horizontally */
+        max-width: 90%; /* Ensures it doesn't stretch too wide */
+    }
+
+    .service-detail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+
 /* Specific Styles for About Section */
+
+/* About Section Text Styling */
+.about-text p {
+    text-align: justify;
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+    .about-text p {
+        padding: 0 15px; /* Optional: Adds some spacing on the sides */
+        text-align: justify;
+    }
+}
+
+
 .about-section .about-content {
     display: flex;
     align-items: center;
@@ -705,7 +762,7 @@ color: rgb(3, 3, 3);
     align-items: center;
     min-height: 100vh;
     /* Ensure full viewport height */
-    background-color: #202020;
+    background-image: url(img/about\ img4.jpg);
     /* Replace with your background image */
     background-size: cover;
     background-position: center;
@@ -717,7 +774,7 @@ color: rgb(3, 3, 3);
 
 .about-section h2 {
     color: white;
-    padding-top: 2rem;
+    padding-top: 4.5rem;
 }
 
 .about-text p {
@@ -728,7 +785,7 @@ color: rgb(3, 3, 3);
     color: rgb(247, 245, 245) !important;
     /* Use a bold color to confirm CSS is applied */
     text-align: center;
-    margin-top: 70px;
+    margin-top: 30px;
 }
 
 .about-section .about-image img {
@@ -827,7 +884,6 @@ color: rgb(3, 3, 3);
     transform: scale(1.2);
     /* Slight zoom effect on hover */
 }
-
 
 
 
@@ -951,11 +1007,6 @@ color: rgb(3, 3, 3);
 }
 
 
-
-
-
-
-
 /* Responsive Adjustments */
 @media (max-width: 768px) {
 
@@ -979,6 +1030,8 @@ color: rgb(3, 3, 3);
         font-size: 18px;
         /* Even smaller icons for small screens */
     }
+
+    
 }
 
 
