@@ -771,6 +771,7 @@ color: rgb(255, 255, 255);
         text-align: justify; /* Justifies the text */
         margin: 0 auto; /* Centers the text block horizontally */
         padding: 10px; /* Adds spacing around the text */
+        
     }
 
     .service-detail {
@@ -814,39 +815,17 @@ color: rgb(255, 255, 255);
 
 
 /* Responsive styles for mobile */
-@media screen and (max-width: 768px) {
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
     .about-text p {
-        font-size: 1rem; /* Reduce font size for smaller screens */
-        padding: 0 4px; /* Adjust padding for smaller screens */
-        text-align: justify; /* Maintain text justification */
+        text-align: justify; /* Ensure the text is justified */
+        margin: 0 5pxpx; /* Add slight margins for better spacing */
+        line-height: 1.5; /* Set consistent line spacing */
+        font-size: 1rem; /* Adjust font size for readability */
+        word-spacing: -1.89px;
+        word-break:normal; /* Prevent text from overflowing */
+        hyphens: auto; /* Enable hyphenation for better word wrapping */
     }
-
-    .about-container {
-        margin: 10px 10px; /* Reduce margins for smaller screens */
-    }
-}
-
-/* Extra small screens (phones) */
-@media screen and (max-width: 480px) {
-    .about-text p {
-        font-size: 0.9rem; /* Further reduce font size */
-        line-height: 1.6; /* Adjust line height */
-        padding: 0 10px; /* Narrower padding for very small screens */
-        text-align: justify; /* Ensure justification on very small screens */
-    }
-
-    .about-container {
-        margin: 5px 5px; /* Minimized margins for very small screens */
-    }
-}
-
-
-.about-section .about-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
 }
 
 #about {
@@ -871,18 +850,33 @@ color: rgb(255, 255, 255);
     
 }
 
+
 .about-text p {
-    font-size: 1.2rem !important;
-    line-height: 1.8 !important;
-    margin-bottom: 20px !important;
-    padding: 0 290px !important;
-    color: rgb(247, 245, 245) !important;
-    text-align: justify;
-    /* text-align: center; */
+    font-size: 1.2rem;
+    line-height: 1.8;
     margin-top: 30px;
+    margin-bottom: 20px;
+    color: rgb(247, 245, 245);
+    text-align: justify;
+    margin: 25px 25px;
     
 }
 
+
+/* Styles for laptops and larger screens */
+@media screen and (min-width: 1024px) {
+    .about-text p {
+        padding: 0 300px; /* Add padding for laptop and larger screens */
+        margin: 25px 0; /* Adjust margins if needed */
+    }
+}
+
+/* Styles for tablets */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .about-text p {
+        padding: 0 50px; /* Adjust padding for tablets */
+    }
+}
 
 
 .about-container {
@@ -891,13 +885,9 @@ color: rgb(255, 255, 255);
     max-width: 800px; /* Restrict the maximum width for better layout */
 }
 
-.about-text {
-    color: white; /* Make the text color white */
-    margin: 0 20px 20px; /* Add margins on the sides and bottom */
-    line-height: 1.8; /* Increase line height for better readability */
-    text-align: justify; /* Justify the text for a clean look */
-    word-spacing: -1.3px;
-}
+
+
+
 
 .about-image img {
     width: 250px; /* Set the width of the image */
