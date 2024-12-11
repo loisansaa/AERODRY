@@ -396,6 +396,7 @@ section p {
     margin-left: auto;
     margin-right: auto;
     line-height: 1.6;
+    text-align: justify;
 }
 
 
@@ -403,10 +404,19 @@ section p {
     grid-column: span 2;
     font-size: 1rem;
     color: #ffffff;
-    text-align: left;
+    text-align: right;
+    text-align: justify;
     margin: 20px auto;
     max-width: 800px;
     line-height: 1.6;
+    
+}
+
+@media (max-width: 768px) {
+    .product-detail{
+        text-align: justify;
+    }
+
 }
 
 .product-grid {
@@ -422,8 +432,7 @@ section p {
 }
 
 
-.product-card,
-.product-detail {
+.product-card {
     text-align: left;
     margin: 0;
 }
@@ -668,6 +677,7 @@ section p {
     font-weight: 1000;
     margin-top: 40px;
     margin-bottom: 40px;
+    text-align: justify;
 }
 
 
@@ -713,108 +723,187 @@ section p {
     text-decoration: none;
 }
 
-.service-detail {
-    margin-top: 95px;
-    color: #fff;
-    font-size: 1rem;
-    line-height: 1.5;
-    /* Adjust line spacing */
+
+.service-detail-1 {
     text-align: center;
-    /* Center the text */
-    max-width: 350px;
-    /* Match the width of the card */
-    margin-left: auto;
-    /* margin-right: auto;*/
+    word-spacing: 1px; 
+    line-height: 1.8;
+    font-size: 18px;
+    text-align: justify;
+    
+    line-height: 1.8;
+    font-size: 18px;
+    color: white;
 }
 
-.service-detail p {
+.service-detail-2 {
     text-align: justify;
-    word-spacing: 0.5px;
-    margin-left: 60px;
-    font-size: 20px;
-    padding-top: 4rem;
-color: rgb(255, 255, 255);
+    word-spacing: 0.8px; /* Adjust spacing */
+    line-height: 1.8;
+    font-size: 18px;
+    text-align: justify;
+    
+    line-height: 1.8;
+    font-size: 18px;
+    color: white;
+}
+
+.service-detail-3 {
+    text-align: justify;
+    word-spacing: 1.2px; /* Adjust spacing */
+    line-height: 1.8;
+    font-size: 18px;
+    text-align: justify;
+    
+    line-height: 1.8;
+    font-size: 18px;
+    color: white;
+}
+
+.service-detail-4 {
+    text-align: justify;
+    word-spacing: 1px; /* Adjust spacing */
+    line-height: 1.8;
+    font-size: 18px;
+    text-align: justify;
+    
+    line-height: 1.8;
+    font-size: 18px;
+    color: white;
+}
+
+.service-detail-5 {
+    text-align: justify;
+    word-spacing: 0.9px; /* Adjust spacing */
+    line-height: 1.8;
+    font-size: 18px;
+    text-align: justify;
+    
+    line-height: 1.8;
+    font-size: 18px;
+    color: white;
+}
+
+/* Default Styles (Desktop View) */
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two-column layout */
+    gap: 40px; /* Space between cards and text */
+    align-items: start; /* Align items to the top */
 }
 
 .service-card {
-    height: 100%;
-    /* Ensure equal height for all cards */
+    height: 100%; /* Ensure equal height for all cards */
 }
 
-
-
-/* Adjust Layout for Laptops and Larger Devices */
-@media (min-width: 1024px) {
-    .services-grid {
-        grid-template-columns: 1fr 1fr;
-        /* Two-column layout */
-        gap: 40px 20px;
-        /* Adjust spacing for larger screens */
-    }
-
-    /* Align services and their descriptions */
-    .service-card {
-        margin-bottom: 0;
-        /* Remove bottom margin for alignment with description */
-    }
-
-    .service-detail {
-        margin-top: -20px;
-        /* Adjust spacing to pair description with card */
-    }
-}
-
-
-/* Service Section Adjustments for Smaller Screens */
-@media (max-width: 768px) {
-    .service-detail p {
-        text-align: justify; /* Justifies the text */
-        margin: 0 auto; /* Centers the text block horizontally */
-        padding: 10px; /* Adds spacing around the text */
-        
-    }
-
-    .service-detail {
-        display: flex;
-        justify-content: center; /* Centers the content within the parent container */
-        text-align: center; /* Ensures text aligns properly in smaller views */
-    }
-
-    /* Adjust spacing for cards and text */
-    .service-card {
-        margin-bottom: 30px;
-    }
-}
-
-/* Tablet-Specific Styling */
-@media (max-width: 1024px) and (min-width: 769px) {
-    .service-detail p {
-        text-align: justify; /* Justifies the text */
-        margin: 0 auto; /* Centers the text block horizontally */
-        max-width: 90%; /* Ensures it doesn't stretch too wide */
-    }
-
-    .service-detail {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-}
-
-
-
-/* Specific Styles for About Section */
-
-/* About Section Text Styling */
-.about-text p {
+.service-detail {
+    margin: 0;
+    display: flex;
+    align-items: center;
     text-align: justify;
 }
 
 
 
+/* Laptop View (1024px - 1366px) */
+@media (max-width: 1366px) and (min-width: 1024px) {
+    .services-grid {
+        gap: 30px; /* Reduce gap between items */
+    }
+    .service-detail-1,
+    .service-detail-2,
+    .service-detail-3,
+    .service-detail-4,
+    .service-detail-5 {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        word-spacing: 0.9px;
+        line-height: 1.6;
+        
+    }
+}
 
-/* Responsive styles for mobile */
+/* Tablet View (769px - 1023px) */
+@media (max-width: 1023px) and (min-width: 769px) {
+    .services-grid {
+        grid-template-columns: 1fr; /* Single-column layout */
+    }
+    .service-card {
+        margin-bottom: 20px; /* Add spacing between card and text */
+    }
+    .service-detail {
+        text-align: center; /* Center align for smaller screens */
+    }
+    .service-detail-1,
+    .service-detail-2,
+    .service-detail-3,
+    .service-detail-4,
+    .service-detail-5 {
+        font-size: 15px; /* Smaller text size */
+        word-spacing: 0.8px;
+        line-height: 1.6;
+        padding: 10px;
+        
+    }
+} 
+
+/* Mobile View (Up to 768px) */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr; /* Single-column layout */
+        gap: 20px; /* Reduce gap for compact display */
+    }
+    .service-detail {
+        text-align: center; /* Center-align text for mobile */
+        padding: 8px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .service-detail-1 {
+        font-size: 18px; /* Smaller text size */
+        word-spacing: 0;
+        line-height: 1.6;
+        padding: -20px;
+    }
+
+    .service-detail-2 {
+        text-align: justify; /* Justifies the text */
+        word-spacing: -3px; /* Adjust word spacing to make it tighter */
+        font-size: 18px; /* Optional: Adjust font size for mobile */
+        margin: 0 auto; /* Centers the text block horizontally */
+        padding: 10px; /* Adds spacing around the text */
+        line-height: 1.6;
+    }
+    .service-detail-3 {
+        text-align: justify; /* Justifies the text */
+        word-spacing: -3px; /* Adjust word spacing to make it tighter */
+        font-size: 18px; /* Optional: Adjust font size for mobile */
+        margin: 0 auto; /* Centers the text block horizontally */
+        padding: 10px; /* Adds spacing around the text */
+        line-height: 1.6;
+    }
+
+    .service-detail-4 {
+        text-align: justify; /* Justifies the text */
+        word-spacing: -3px; /* Adjust word spacing to make it tighter */
+        font-size: 18px; /* Optional: Adjust font size for mobile */
+        margin: 0 auto; /* Centers the text block horizontally */
+        padding: 10px; /* Adds spacing around the text */
+        line-height: 1.6;
+    }
+
+    .service-detail-5 {
+        text-align: justify; /* Justifies the text */
+        word-spacing: -3px; /* Adjust word spacing to make it tighter */
+        font-size: 18px; /* Optional: Adjust font size for mobile */
+        margin: 0 auto; /* Centers the text block horizontally */
+        padding: 10px; /* Adds spacing around the text */
+        line-height: -3;
+    }
+}
+
+
 /* Responsive styles for mobile */
 @media (max-width: 768px) {
     .about-text p {
