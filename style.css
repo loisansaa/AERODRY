@@ -732,21 +732,13 @@ section p {
 .services-intro {
     text-align: justify;
     margin: 0 auto;
-    /* Centers the element horizontally */
     padding: 10px;
-    /* Adds space around the text */
     max-width: 670px;
-    /* Limits the width to make it more readable on larger screens */
     font-size: 18px;
-    /* Adjusts text size for better readability */
     line-height: 2;
-    /* Improves line spacing */
     word-spacing: normal;
-    /* Ensures consistent spacing between words */
     color: #ffffff;
-    /* Text color for readability */
     font-family: 'Arial', sans-serif;
-    /* Sets a clean font */
     margin-bottom: 5rem;
 }
 
@@ -868,66 +860,68 @@ section p {
 
 
 .service-detail-1 {
-    text-align: center;
-    word-spacing: 1px;
-    line-height: 1.8;
     font-size: 18px;
     text-align: justify;
-    line-height: 1.8;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 670px;
     font-size: 18px;
-    color: white;
+    line-height: 2;
+    word-spacing: normal;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
 }
 
 .service-detail-2 {
-    text-align: justify;
-    word-spacing: 0.8px;
-    /* Adjust spacing */
-    line-height: 1.8;
     font-size: 18px;
     text-align: justify;
-
-    line-height: 1.8;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 670px;
     font-size: 18px;
-    color: white;
+    line-height: 2;
+    word-spacing: normal;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
 }
 
 .service-detail-3 {
-    text-align: justify;
-    word-spacing: 1.2px;
-    /* Adjust spacing */
-    line-height: 1.8;
     font-size: 18px;
     text-align: justify;
-
-    line-height: 1.8;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 670px;
     font-size: 18px;
-    color: white;
+    line-height: 2;
+    word-spacing: normal;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
 }
 
 .service-detail-4 {
-    text-align: justify;
-    word-spacing: 1px;
-    /* Adjust spacing */
-    line-height: 1.8;
     font-size: 18px;
     text-align: justify;
-
-    line-height: 1.8;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 670px;
     font-size: 18px;
-    color: white;
+    line-height: 2;
+    word-spacing: normal;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
 }
 
 .service-detail-5 {
-    text-align: justify;
-    word-spacing: 0.9px;
-    /* Adjust spacing */
-    line-height: 1.8;
     font-size: 18px;
     text-align: justify;
-
-    line-height: 1.8;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 670px;
     font-size: 18px;
-    color: white;
+    line-height: 2;
+    word-spacing: normal;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
 }
 
 /* Default Styles (Desktop View) */
@@ -1016,98 +1010,57 @@ section p {
     }
 
     .service-detail {
-        text-align: center;
-        /* Center-align text for mobile */
-        padding: 8px;
+        font-size: 14px;
+        /* Smaller font size for very small screens */
+        line-height: 2;
+        text-align: justify;
+        word-spacing: normal;
     }
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .service-detail-1 {
-        font-size: 18px;
-        /* Smaller text size */
-        word-spacing: 0;
-        line-height: 1.6;
-        padding: -20px;
+        font-size: 14px;
+        /* Smaller font size for very small screens */
+        line-height: 2;
+        text-align: justify;
+        word-spacing: normal;
     }
 
     .service-detail-2 {
+        font-size: 14px;
+        /* Smaller font size for very small screens */
+        line-height: 2;
         text-align: justify;
-        /* Justifies the text */
-        word-spacing: -3px;
-        /* Adjust word spacing to make it tighter */
-        font-size: 18px;
-        /* Optional: Adjust font size for mobile */
-        margin: 0 auto;
-        /* Centers the text block horizontally */
-        padding: 10px;
-        /* Adds spacing around the text */
-        line-height: 1.6;
+        word-spacing: normal;
     }
 
     .service-detail-3 {
+        font-size: 14px;
+        /* Smaller font size for very small screens */
+        line-height: 2;
         text-align: justify;
-        /* Justifies the text */
-        word-spacing: -3px;
-        /* Adjust word spacing to make it tighter */
-        font-size: 18px;
-        /* Optional: Adjust font size for mobile */
-        margin: 0 auto;
-        /* Centers the text block horizontally */
-        padding: 10px;
-        /* Adds spacing around the text */
-        line-height: 1.6;
+        word-spacing: normal;
     }
 
     .service-detail-4 {
+        font-size: 14px;
+        /* Smaller font size for very small screens */
+        line-height: 2;
         text-align: justify;
-        /* Justifies the text */
-        word-spacing: -3px;
-        /* Adjust word spacing to make it tighter */
-        font-size: 18px;
-        /* Optional: Adjust font size for mobile */
-        margin: 0 auto;
-        /* Centers the text block horizontally */
-        padding: 10px;
-        /* Adds spacing around the text */
-        line-height: 1.6;
+        word-spacing: normal;
     }
 
     .service-detail-5 {
+        font-size: 14px;
+        /* Smaller font size for very small screens */
+        line-height: 2;
         text-align: justify;
-        /* Justifies the text */
-        word-spacing: -3px;
-        /* Adjust word spacing to make it tighter */
-        font-size: 18px;
-        /* Optional: Adjust font size for mobile */
-        margin: 0 auto;
-        /* Centers the text block horizontally */
-        padding: 10px;
-        /* Adds spacing around the text */
-        line-height: -3;
+        word-spacing: normal;
     }
 }
 
-
-/* Responsive styles for mobile */
-@media (max-width: 768px) {
-    .about-text p {
-        text-align: justify;
-        /* Ensure the text is justified */
-        margin: 0 5pxpx;
-        /* Add slight margins for better spacing */
-        line-height: 1.5;
-        /* Set consistent line spacing */
-        font-size: 1rem;
-        /* Adjust font size for readability */
-        word-spacing: -1.89px;
-        word-break: normal;
-        /* Prevent text from overflowing */
-        hyphens: auto;
-        /* Enable hyphenation for better word wrapping */
-    }
-}
 
 #about {
 
@@ -1119,10 +1072,8 @@ section p {
     /* Replace with your background image */
     background-size: cover;
     background-position: center;
-    color: white;
-    /* Text color for contrast */
-    text-align: center;
-    /* Center the text */
+
+
 }
 
 .about-section h2 {
@@ -1132,68 +1083,76 @@ section p {
 }
 
 
-.about-text p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    color: rgb(247, 245, 245);
+.about-intro {
     text-align: justify;
-    margin: 25px 25px;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 670px;
+    font-size: 18px;
+    line-height: 2;
+    word-spacing: normal;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 5rem;
 
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 480px) {
+    .about-intro {
+        font-size: 14px;
+        /* Smaller font size for very small screens */
+        line-height: 2;
+        text-align: justify;
+        word-spacing: normal;
+        padding: 2rem;
+    }
 }
 
 
 /* Styles for laptops and larger screens */
 @media screen and (min-width: 1024px) {
     .about-text p {
-        padding: 0 300px;
-        /* Add padding for laptop and larger screens */
-        margin: 25px 0;
-        /* Adjust margins if needed */
+        text-align: justify;
+        margin: 0 auto;
+        padding: 10px;
+        max-width: 670px;
+        font-size: 18px;
+        line-height: 2;
+        word-spacing: normal;
+        color: #ffffff;
+        font-family: 'Arial', sans-serif;
+
     }
 }
 
 /* Styles for tablets */
-@media screen and (max-width: 1023px) and (min-width: 768px) {
-    .about-text p {
-        padding: 0 50px;
+@media screen and (max-width: 1023px) and (min-width: 480px) {
+    .about-intro {
+        font-size: 14px;
+        /* Smaller font size for very small screens */
+        line-height: 2;
+        text-align: justify;
+        word-spacing: normal;
         /* Adjust padding for tablets */
     }
 }
 
 
-.about-container {
-    text-align: center;
-    /* Center the content horizontally */
-    margin: 20px auto;
-    /* Center the container and add spacing */
-    max-width: 800px;
-    /* Restrict the maximum width for better layout */
-}
-
-
-
-
 
 .about-image img {
-    width: 250px;
-    /* Set the width of the image */
-    height: 250px;
-    /* Set the height of the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
     border-radius: 50%;
-    /* Make the image circular */
     object-fit: cover;
-    /* Ensure the image fills the circular shape without distortion */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Optional: Add a subtle shadow */
+    width: 250px;
     margin: 0 auto;
-    /* Center the image */
-    margin-bottom: 50px;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+
 }
-
-
-
 
 
 
