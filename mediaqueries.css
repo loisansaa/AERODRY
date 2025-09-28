@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    /* NEW */
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

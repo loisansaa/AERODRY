@@ -16,7 +16,7 @@ body {
 
 /* Navbar Styles */
 header {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(250, 251, 250, 0.6);
     position: fixed;
     width: 100%;
     top: 0;
@@ -59,7 +59,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    
 }
 
 .navbar .logo img {
@@ -127,7 +127,7 @@ header {
 .content-slide {
     min-height: 100vh;
     width: 100%;
-    background-image: url(./img/nuts-arrangement-with-copy-space.jpg);
+    background-color: #030202;
     background-size: cover;
     background-position: center;
     transition: 5s;
@@ -263,52 +263,7 @@ p {
 
 
 
-/* Keyframe animation to slide through images one by one every 5 seconds */
-@keyframes animate {
-    0% {
-        background-image: url(./img/agricultural-barley-wheat-background-cereal-farm-generate-ai_98402-136291.jpg);
-    }
 
-    ;
-
-    20% {
-        background-image: url(./img/install\ 3.jpg)
-    }
-
-    ;
-
-    40% {
-        background-image: url(./img/nuts-arrangement-with-copy-space.jpg)
-    }
-
-    ;
-
-    60% {
-        background-image: url(./img/install\ 3.jpg)
-    }
-
-    ;
-
-    80% {
-        background-image: url(./img/pin6.jpg)
-    }
-
-    ;
-
-    100% {
-        background-image: url(./img/nuts-arrangement-with-copy-space.jpg)
-    }
-
-    ;
-
-    /* 120% {
-        background-image: url(./img/agric3.jpg)
-    } */
-
-    ;
-
-
-}
 
 
 
@@ -349,26 +304,7 @@ p {
 
 
 
-* Section Styles */ section {
-    padding: 60px 20px;
-    text-align: center;
-}
 
-#products {
-    background-color: #fff;
-}
-
-#services {
-    background-color: #4c4e52;
-}
-
-#about {
-    background-color: #eee;
-}
-
-#contact {
-    background-color: #e9e9e9;
-}
 
 
 section h2 {
